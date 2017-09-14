@@ -19,11 +19,11 @@ const PORT = 8081;
 
 //TODO: Change question sets from 1 to 50
 
-const question_set_1 = [7,28,16,25,27,17,3,12,13,24,22,26];
-const question_set_2 = [14,13,5,25,19,9,21,2,8,11,23,3];
-const question_set_3 = [8,17,23,10,20,21,28,14,2,9,5,16];
-const question_set_4 = [13,28,22,17,7,24,20,3,5,27,9,14];
-const question_set_5 = [14,3,13,10,24,1,6,20,2,18,7,5];
+const question_set_1 = [6,3,47,23,20,41,29,28,11,43,14,38];
+const question_set_2 = [48,17,40,20,21,29,8,23,22,6,32,24];
+const question_set_3 = [44,34,39,27,7,14,6,17,23,8,32,24];
+const question_set_4 = [17,18,28,26,36,21,29,25,34,44,24,0];
+const question_set_5 = [5,29,8,0,36,13,41,3,31,48,30,38];
 
 //Keep track of all the states
 const States = {
