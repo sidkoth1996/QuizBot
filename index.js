@@ -16,9 +16,6 @@ var uc = require('upper-case');
 const PORT = 8081;
 
 //Question sets with random unique integers between 1 and 30
-
-//TODO: Change question sets from 1 to 50
-
 const question_set_1 = [6,3,47,23,20,41,29,28,11,43,14,38];
 const question_set_2 = [48,17,40,20,21,29,8,23,22,6,32,24];
 const question_set_3 = [44,34,39,27,7,14,6,17,23,8,32,24];
@@ -85,7 +82,7 @@ io.on('connection', function(socket) {
 			let question_file; 
 			let temp_msg = uc(msg);
 
-			if (temp_msg == 1|| string(temp_msg).include('ENTERTAINMENT')) {
+			if (temp_msg == 1 || string(temp_msg).include('ENTERTAINMENT')) {
 				setCategory("Entertainment");
 
 				question_file = __dirname + "/questions/entertainment.json";
@@ -95,7 +92,7 @@ io.on('connection', function(socket) {
 				setState(States.state_begin_quiz);
 				state_begin_quiz();
 			}
-			else if (temp_msg == 2|| string(temp_msg).include('SPORTS')) {
+			else if (temp_msg == 2 || string(temp_msg).include('SPORTS')) {
 				setCategory("Sports");
 
 				question_file = __dirname + "/questions/sports.json";
@@ -133,7 +130,8 @@ io.on('connection', function(socket) {
 
 			if(string(temp_msg).include(index_of_correct_answer + 1) || string(temp_msg).include(uc(correct_answer))) {
 				console.log("Correct answer");
-				//change color of website UI to green
+				
+				io.emit('correct answer', {});
 
 				//Increase score
 				incrementScore();
@@ -141,7 +139,8 @@ io.on('connection', function(socket) {
 			}
 			else {
 				console.log("Wrong answer");
-				//change color of website UI to red
+				
+				io.emit('wrong answer', {});
 			}
 
 			setState(States.state_question_2);
@@ -157,7 +156,8 @@ io.on('connection', function(socket) {
 
 			if(string(temp_msg).include(index_of_correct_answer + 1) || string(temp_msg).include(uc(correct_answer))) {
 				console.log("Correct answer");
-				//change color of website UI to green
+				
+				io.emit('correct answer', {});
 
 				//Increase score
 				incrementScore();
@@ -165,7 +165,8 @@ io.on('connection', function(socket) {
 			}
 			else {
 				console.log("Wrong answer");
-				//change color of website UI to red
+				
+				io.emit('wrong answer', {});
 			}
 
 			setState(States.state_question_3);
@@ -180,7 +181,8 @@ io.on('connection', function(socket) {
 
 			if(string(temp_msg).include(index_of_correct_answer + 1) || string(temp_msg).include(uc(correct_answer))) {
 				console.log("Correct answer");
-				//change color of website UI to green
+				
+				io.emit('correct answer', {});
 
 				//Increase score
 				incrementScore();
@@ -188,7 +190,8 @@ io.on('connection', function(socket) {
 			}
 			else {
 				console.log("Wrong answer");
-				//change color of website UI to red
+				
+				io.emit('wrong answer', {});
 			}
 
 			setState(States.state_question_4);
@@ -203,7 +206,8 @@ io.on('connection', function(socket) {
 
 			if(string(temp_msg).include(index_of_correct_answer + 1) || string(temp_msg).include(uc(correct_answer))) {
 				console.log("Correct answer");
-				//change color of website UI to green
+				
+				io.emit('correct answer', {});
 
 				//Increase score
 				incrementScore();
@@ -211,7 +215,8 @@ io.on('connection', function(socket) {
 			}
 			else {
 				console.log("Wrong answer");
-				//change color of website UI to red
+				
+				io.emit('wrong answer', {});
 			}
 
 			setState(States.state_question_5);
@@ -226,7 +231,8 @@ io.on('connection', function(socket) {
 
 			if(string(temp_msg).include(index_of_correct_answer + 1) || string(temp_msg).include(uc(correct_answer))) {
 				console.log("Correct answer");
-				//change color of website UI to green
+				
+				io.emit('correct answer', {});
 
 				//Increase score
 				incrementScore();
@@ -234,7 +240,8 @@ io.on('connection', function(socket) {
 			}
 			else {
 				console.log("Wrong answer");
-				//change color of website UI to red
+				
+				io.emit('wrong answer', {});
 			}
 
 			setState(States.state_question_6);
@@ -249,7 +256,8 @@ io.on('connection', function(socket) {
 
 			if(string(temp_msg).include(index_of_correct_answer + 1) || string(temp_msg).include(uc(correct_answer))) {
 				console.log("Correct answer");
-				//change color of website UI to green
+				
+				io.emit('correct answer', {});
 
 				//Increase score
 				incrementScore();
@@ -257,7 +265,8 @@ io.on('connection', function(socket) {
 			}
 			else {
 				console.log("Wrong answer");
-				//change color of website UI to red
+				
+				io.emit('wrong answer', {});
 			}
 
 			setState(States.state_question_7);
@@ -271,10 +280,10 @@ io.on('connection', function(socket) {
 			let index_of_correct_answer = options.indexOf(correct_answer);
 
 			//index_of_correct_answer + 1 because user will input 1 for array element that is at index 0
-
 			if(string(temp_msg).include(index_of_correct_answer + 1) || string(temp_msg).include(uc(correct_answer))) {
 				console.log("Correct answer");
-				//change color of website UI to green
+				
+				io.emit('correct answer', {});
 
 				//Increase score
 				incrementScore();
@@ -282,7 +291,8 @@ io.on('connection', function(socket) {
 			}
 			else {
 				console.log("Wrong answer");
-				//change color of website UI to red
+				
+				io.emit('wrong answer', {});
 			}
 
 			setState(States.state_question_8);
@@ -297,7 +307,8 @@ io.on('connection', function(socket) {
 
 			if(string(temp_msg).include(index_of_correct_answer + 1) || string(temp_msg).include(uc(correct_answer))) {
 				console.log("Correct answer");
-				//change color of website UI to green
+				
+				io.emit('correct answer', {});
 
 				//Increase score
 				incrementScore();
@@ -305,7 +316,8 @@ io.on('connection', function(socket) {
 			}
 			else {
 				console.log("Wrong answer");
-				//change color of website UI to red
+				
+				io.emit('wrong answer', {});
 			}
 
 			setState(States.state_question_9);
@@ -322,7 +334,8 @@ io.on('connection', function(socket) {
 
 			if(string(temp_msg).include(index_of_correct_answer + 1) || string(temp_msg).include(uc(correct_answer))) {
 				console.log("Correct answer");
-				//change color of website UI to green
+				
+				io.emit('correct answer', {});
 
 				//Increase score
 				incrementScore();
@@ -330,7 +343,8 @@ io.on('connection', function(socket) {
 			}
 			else {
 				console.log("Wrong answer");
-				//change color of website UI to red
+				
+				io.emit('wrong answer', {});
 			}
 
 			setState(States.state_question_10);
@@ -347,7 +361,8 @@ io.on('connection', function(socket) {
 
 			if(string(temp_msg).include(index_of_correct_answer + 1) || string(temp_msg).include(uc(correct_answer))) {
 				console.log("Correct answer");
-				//change color of website UI to green
+				
+				io.emit('correct answer', {});
 
 				//Increase score
 				incrementScore();
@@ -355,7 +370,8 @@ io.on('connection', function(socket) {
 			}
 			else {
 				console.log("Wrong answer");
-				//change color of website UI to red
+				
+				io.emit('wrong answer', {});
 			}
 
 			setState(States.state_question_11);
@@ -370,7 +386,8 @@ io.on('connection', function(socket) {
 
 			if(string(temp_msg).include(index_of_correct_answer + 1) || string(temp_msg).include(uc(correct_answer))) {
 				console.log("Correct answer");
-				//change color of website UI to green
+				
+				io.emit('correct answer', {});
 
 				//Increase score
 				incrementScore();
@@ -378,7 +395,8 @@ io.on('connection', function(socket) {
 			}
 			else {
 				console.log("Wrong answer");
-				//change color of website UI to red
+				
+				io.emit('wrong answer', {});
 			}
 
 			setState(States.state_question_12);
@@ -393,7 +411,8 @@ io.on('connection', function(socket) {
 
 			if(string(temp_msg).include(index_of_correct_answer + 1) || string(temp_msg).include(uc(correct_answer))) {
 				console.log("Correct answer");
-				//change color of website UI to green
+				
+				io.emit('correct answer', {});
 
 				//Increase score
 				incrementScore();
@@ -401,7 +420,8 @@ io.on('connection', function(socket) {
 			}
 			else {
 				console.log("Wrong answer");
-				//change color of website UI to red
+				
+				io.emit('wrong answer', {});
 			}
 
 			setState(States.state_end);
