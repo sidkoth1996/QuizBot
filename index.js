@@ -134,7 +134,7 @@ io.on('connection', function(socket) {
 				io.emit('correct answer', {});
 
 				//Increase score
-				incrementScore();
+				incrementScore(); 
 			
 			}
 			else {
@@ -465,7 +465,7 @@ var state_start = function() {
 };
 
 var state_category = function() {
-	io.emit('bot message', {'msg': 'Nice to meet you '+ getName()+ '. What category do you pick? 1)Hollywood movies 2)Bollywood movies 3)Tennis 4)Cricket', 'score': getScore()});
+	io.emit('bot message', {'msg': 'Nice to meet you '+ getName()+ '. What category do you pick? 1)Entertainment 2)Sports?', 'score': getScore()});
 };
 
 var state_begin_quiz = function() {

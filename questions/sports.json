@@ -1,13 +1,470 @@
 [
 	{
-		"question":"Question 1",
-		"answer":"XYZ",
-		"number":"1"
+		"Sr.no.": "1",
+		"Question": "Anthony De Mello Trophy is associated with Test cricket series played between?",
+		"Correct Answer": "Ind and Eng",
+		"Option A": "Ind and SL",
+		"Option B": "Ind and Aus",
+		"Option C": "Ind and Eng",
+		"Option D": "Ind and SA",
+		"": ""
 	},
-
 	{
-		"question":"Question 2",
-		"answer":"ZYZ",
-		"number":"2"
+		"Sr.no.": "2",
+		"Question": " 'Playing to Win' is my Biography! Who am I?",
+		"Correct Answer": "Saina Nehwal ",
+		"Option A": "Saina Nehwal ",
+		"Option B": "Mary Kom ",
+		"Option C": "Yuvraj Singh ",
+		"Option D": "Sachin Tendulkar",
+		"": ""
+	},
+	{
+		"Sr.no.": "3",
+		"Question": "The first Indian wicketkeeper to score an ODI century?",
+		"Correct Answer": "Rahul Dravid",
+		"Option A": "Vijay Dahiya",
+		"Option B": "Parthiv Patel",
+		"Option C": "M.S Dhoni",
+		"Option D": "Rahul Dravid",
+		"": ""
+	},
+	{
+		"Sr.no.": "4",
+		"Question": "How many 400+ scores has India registered in ODIs?",
+		"Correct Answer": "5",
+		"Option A": "4",
+		"Option B": "5",
+		"Option C": "6",
+		"Option D": "3",
+		"": ""
+	},
+	{
+		"Sr.no.": "5",
+		"Question": "Who has scored the fastest 300 in test cricket?",
+		"Correct Answer": "Virender Sehwag",
+		"Option A": "Karun Nair",
+		"Option B": "Brendon McCullum",
+		"Option C": "Matthew Hayden",
+		"Option D": "Virender Sehwag",
+		"": ""
+	},
+	{
+		"Sr.no.": "6",
+		"Question": "India's highest score in ODIs?",
+		"Correct Answer": "418",
+		"Option A": "413",
+		"Option B": "401",
+		"Option C": "418",
+		"Option D": "411",
+		"": ""
+	},
+	{
+		"Sr.no.": "7",
+		"Question": "Youngest Indian to receive the Khel Ratna award?",
+		"Correct Answer": "Abhinav Bindra",
+		"Option A": "Sachin Tendulkar",
+		"Option B": "Virat Kohli",
+		"Option C": "Abhinav Bindra",
+		"Option D": "Saina Nehwal",
+		"": ""
+	},
+	{
+		"Sr.no.": "8",
+		"Question": "Which Fashion designer is the daughter of Sir Viv Richards?",
+		"Correct Answer": "Masaba Gupta",
+		"Option A": "Masaba Gupta",
+		"Option B": "Payal Singhal",
+		"Option C": "Archana Kochhar",
+		"Option D": "Monisha Jaising",
+		"": ""
+	},
+	{
+		"Sr.no.": "9",
+		"Question": "Mark Waugh is commonly called as?",
+		"Correct Answer": "Junior",
+		"Option A": "Junior",
+		"Option B": "Tugga",
+		"Option C": "Julio",
+		"Option D": "Pup",
+		"": ""
+	},
+	{
+		"Sr.no.": "10",
+		"Question": "Who was the 1st ODI captain for India?",
+		"Correct Answer": "Ajit Wadekar",
+		"Option A": "Bishen Singh Bedi",
+		"Option B": "Ajit Wadekar",
+		"Option C": "Nawab Pataudi",
+		"Option D": "Vinoo Mankad",
+		"": ""
+	},
+	{
+		"Sr.no.": "11",
+		"Question": "What is Glenn McGrath's nickname?",
+		"Correct Answer": "Pigeon",
+		"Option A": "Crow",
+		"Option B": "Sparrow",
+		"Option C": "Penguin",
+		"Option D": "Pigeon",
+		"": ""
+	},
+	{
+		"Sr.no.": "12",
+		"Question": "Being Myself' is the autobiography of which tennis player?",
+		"Correct Answer": "Martina Navratilova",
+		"Option A": "Venus Williams",
+		"Option B": "Amelie Mauresmo",
+		"Option C": "Martina Hingis",
+		"Option D": "Martina Navratilova",
+		"": ""
+	},
+	{
+		"Sr.no.": "13",
+		"Question": "Which county did Sachin Tendulkar play for?",
+		"Correct Answer": "Yorkshire",
+		"Option A": "Nottinghamshire",
+		"Option B": "Lancashire",
+		"Option C": "Yorkshire",
+		"Option D": "Leicestershire",
+		"": ""
+	},
+	{
+		"Sr.no.": "14",
+		"Question": "Which was the only team to defeat India during the 2007 World T20 Championship?",
+		"Correct Answer": "NZ",
+		"Option A": "NZ",
+		"Option B": "PAK",
+		"Option C": "AUS",
+		"Option D": "SA",
+		"": ""
+	},
+	{
+		"Sr.no.": "15",
+		"Question": "Who won the 1992 Cricket WC held in Australia?",
+		"Correct Answer": "Pak",
+		"Option A": "Pak",
+		"Option B": "SL",
+		"Option C": "AUS",
+		"Option D": "WI",
+		"": ""
+	},
+	{
+		"Sr.no.": "16",
+		"Question": "AB De Villiers scored the fastest ODI century in how many balls?",
+		"Correct Answer": "31",
+		"Option A": "37",
+		"Option B": "45",
+		"Option C": "60",
+		"Option D": "31"
+	},
+	{
+		"Sr.no.": "17",
+		"Question": "Who is the captain of Pro Kabaddi League's team U Mumba?",
+		"Correct Answer": "Anup Kumar",
+		"Option A": "Deepak Mondal",
+		"Option B": "Anup Kumar",
+		"Option C": "Mohit Chillar",
+		"Option D": "Surender Nada"
+	},
+	{
+		"Sr.no.": "18",
+		"Question": "The tallest wrestler among the following?",
+		"Correct Answer": "Andre The Giant",
+		"Option A": "The Big Show",
+		"Option B": "The Great Khali",
+		"Option C": "Andre The Giant",
+		"Option D": "The Undertaker"
+	},
+	{
+		"Sr.no.": "19",
+		"Question": "What colour jersey is worn by the winners of each stage of the Tour De France?",
+		"Correct Answer": "Yellow",
+		"Option A": "Red",
+		"Option B": "Black",
+		"Option C": "Green",
+		"Option D": "Yellow"
+	},
+	{
+		"Sr.no.": "20",
+		"Question": "Who won the Cricket Champions Trophy in 2004?",
+		"Correct Answer": "WI",
+		"Option A": "IND",
+		"Option B": "AUS",
+		"Option C": "SA",
+		"Option D": "WI"
+	},
+	{
+		"Sr.no.": "21",
+		"Question": "In football",
+		"Correct Answer": " which team is nicknamed 'Galacticos'?",
+		"Option A": "Real Madrid",
+		"Option B": "Real Madrid",
+		"Option C": "Juventus",
+		"Option D": "Bayern Munich",
+		"": "Chelsea"
+	},
+	{
+		"Sr.no.": "22",
+		"Question": "We are One",
+		"Correct Answer": " the official song of FIFA world cup 2014 was recorded by?",
+		"Option A": "Pitbull",
+		"Option B": "Shakira",
+		"Option C": "Pitbull",
+		"Option D": "Akon",
+		"": "Rihanna"
+	},
+	{
+		"Sr.no.": "23",
+		"Question": "Which city will host the 2020 Olympics?",
+		"Correct Answer": "Tokyo",
+		"Option A": "Sydney",
+		"Option B": "Toronto",
+		"Option C": "Tokyo",
+		"Option D": "New Delhi"
+	},
+	{
+		"Sr.no.": "24",
+		"Question": "Where is the venue for 2018 Asian games ?",
+		"Correct Answer": "Indonesia",
+		"Option A": "China",
+		"Option B": "South Korea",
+		"Option C": "India",
+		"Option D": "Indonesia"
+	},
+	{
+		"Sr.no.": "25",
+		"Question": "Who was the flag bearer for India in the 2016 Rio Olympics ?",
+		"Correct Answer": "Abhinav Bindra",
+		"Option A": "Sakshi Malik",
+		"Option B": "PV Sidhu",
+		"Option C": "Sunil Chhetri",
+		"Option D": "Abhinav Bindra"
+	},
+	{
+		"Sr.no.": "26",
+		"Question": "Which team won the 2010 World T20 Championship?",
+		"Correct Answer": "ENG",
+		"Option A": "Ind",
+		"Option B": "WI",
+		"Option C": "ENG",
+		"Option D": "PAK"
+	},
+	{
+		"Sr.no.": "27",
+		"Question": "Which team won the 2014 World T20 Championship?",
+		"Correct Answer": "SL",
+		"Option A": "WI",
+		"Option B": "ENG",
+		"Option C": "SL",
+		"Option D": "AUS"
+	},
+	{
+		"Sr.no.": "28",
+		"Question": "Which country will host the 2019 cricket WC?",
+		"Correct Answer": "ENG",
+		"Option A": "SA",
+		"Option B": "IND",
+		"Option C": "ENG",
+		"Option D": "PAK"
+	},
+	{
+		"Sr.no.": "29",
+		"Question": "The term ",
+		"Correct Answer": "Cricket",
+		"Option A": "Kabaddi",
+		"Option B": "Fishing",
+		"Option C": "Cricket",
+		"Option D": "Tennis"
+	},
+	{
+		"Sr.no.": "30",
+		"Question": "Dipa Karmakar",
+		"Correct Answer": " a medal winner in Commonwealth Games 2014",
+		"Option A": " is associated with?",
+		"Option B": "Gymnastics",
+		"Option C": "Squash",
+		"Option D": "Badminton",
+		"": "Gymnastics"
+	},
+	{
+		"Sr.no.": "31",
+		"Question": "The only Indian athlete to win 2 individual Olympic medals is?",
+		"Correct Answer": "Sushil Kumar",
+		"Option A": "Saina Nehwal ",
+		"Option B": "Abhinav Bindra",
+		"Option C": "Sushil Kumar",
+		"Option D": "PV Sindhu"
+	},
+	{
+		"Sr.no.": "32",
+		"Question": "Federation Cup",
+		"Correct Answer": "Football",
+		"Option A": "Hockey",
+		"Option B": "Football",
+		"Option C": "Cricket",
+		"Option D": "Rugby"
+	},
+	{
+		"Sr.no.": "33",
+		"Question": "Who among the following was not a Goodwill Ambassador for Rio Olympics?",
+		"Correct Answer": "Sania Mirza",
+		"Option A": "Sania Mirza",
+		"Option B": "Salman Khan",
+		"Option C": "AR Rahman",
+		"Option D": "Abhinav Bindra"
+	},
+	{
+		"Sr.no.": "34",
+		"Question": "What is the national game of India?",
+		"Correct Answer": "Hockey",
+		"Option A": "Cricket",
+		"Option B": "Hockey",
+		"Option C": "Kabaddi",
+		"Option D": "Badminton"
+	},
+	{
+		"Sr.no.": "35",
+		"Question": "India won a bronze at the Rio Olympics 2016 in?",
+		"Correct Answer": "Wrestling",
+		"Option A": "Wrestling",
+		"Option B": "Badminton",
+		"Option C": "Shooting",
+		"Option D": "Gymnastics"
+	},
+	{
+		"Sr.no.": "36",
+		"Question": "The record for highest T20 international chase is held by?",
+		"Correct Answer": "WI",
+		"Option A": "AUS",
+		"Option B": "ENG",
+		"Option C": "WI",
+		"Option D": "IND"
+	},
+	{
+		"Sr.no.": "37",
+		"Question": "Who is called the King of Clay?",
+		"Correct Answer": "Rafael Nadal",
+		"Option A": "Roger Federer",
+		"Option B": "Novak Djokovic",
+		"Option C": "Rafael Nadal",
+		"Option D": "Juan Martin del Potro"
+	},
+	{
+		"Sr.no.": "38",
+		"Question": "Highest team total in T20Is?",
+		"Correct Answer": "263",
+		"Option A": "263",
+		"Option B": "260",
+		"Option C": "257",
+		"Option D": "245"
+	},
+	{
+		"Sr.no.": "39",
+		"Question": "Batsman with most runs in T20 international career?",
+		"Correct Answer": "Brendon McCullum",
+		"Option A": "Virat Kohli",
+		"Option B": "Brendon McCullum",
+		"Option C": "Chris Gayle",
+		"Option D": "AB de Villiers"
+	},
+	{
+		"Sr.no.": "40",
+		"Question": "Who won the Pro Kabaddi League 2016?",
+		"Correct Answer": "Patna Pirates",
+		"Option A": "U Mumba",
+		"Option B": "Patna Pirates",
+		"Option C": "Telugu Titans",
+		"Option D": "Jaipur Pink Panthers"
+	},
+	{
+		"Sr.no.": "41",
+		"Question": "Highest individual score in a T20Is was made by?",
+		"Correct Answer": "Aaron Finch",
+		"Option A": "Yuvraj Singh",
+		"Option B": "AB de Villiers",
+		"Option C": "Chris Gayle",
+		"Option D": "Aaron Finch"
+	},
+	{
+		"Sr.no.": "42",
+		"Question": "Record for fastest 50 in T20Is is held by?",
+		"Correct Answer": "Yuvraj Singh",
+		"Option A": "Yuvraj Singh",
+		"Option B": "AB de Villiers",
+		"Option C": "Chris Gayle",
+		"Option D": "Aaron Finch"
+	},
+	{
+		"Sr.no.": "43",
+		"Question": "Which team has the highest T20 win percentage?",
+		"Correct Answer": "AFG",
+		"Option A": "Aus",
+		"Option B": "AFG",
+		"Option C": "WI",
+		"Option D": "IND"
+	},
+	{
+		"Sr.no.": "44",
+		"Question": "Batsman with most sixes in T20 career?",
+		"Correct Answer": "Chris Gayle",
+		"Option A": "Yuvraj Singh",
+		"Option B": "AB de Villiers",
+		"Option C": "Chris Gayle",
+		"Option D": "Shahid Afridi"
+	},
+	{
+		"Sr.no.": "45",
+		"Question": "Who was the Silver medallist for India in the Rio Olympics?",
+		"Correct Answer": "PV Sindhu",
+		"Option A": "Dipa Karmakar",
+		"Option B": "PV SIDHU",
+		"Option C": "Saina Nehwal",
+		"Option D": "Sakshi Malik"
+	},
+	{
+		"Sr.no.": "46",
+		"Question": "First Indian woman to win an Olympic medal?",
+		"Correct Answer": "Karnam Malleswari ",
+		"Option A": "Saina Nehwal ",
+		"Option B": "MC Mary Kom",
+		"Option C": "Karnam Malleswari ",
+		"Option D": "Sakshi Malik"
+	},
+	{
+		"Sr.no.": "47",
+		"Question": "Who holds the record for highest team score in ODIs?",
+		"Correct Answer": "ENG",
+		"Option A": "SA",
+		"Option B": "ENG",
+		"Option C": "AUS",
+		"Option D": "IND"
+	},
+	{
+		"Sr.no.": "48",
+		"Question": "Who holds the record for the highest successful run-chase in ODIs?",
+		"Correct Answer": "SA",
+		"Option A": "ENG",
+		"Option B": "IND",
+		"Option C": "AUS",
+		"Option D": "SA"
+	},
+	{
+		"Sr.no.": "49",
+		"Question": "Who won the Cricket WC 1987?",
+		"Correct Answer": "Aus",
+		"Option A": "WI",
+		"Option B": "IND",
+		"Option C": "AUS",
+		"Option D": "PAK"
+	},
+	{
+		"Sr.no.": "50",
+		"Question": "Who holds the record for the highest wickets taken in an ODI match?",
+		"Correct Answer": "Chaminda Vaas",
+		"Option A": "Bret Lee",
+		"Option B": "Glen McGrath",
+		"Option C": "Shoaib Akhtar",
+		"Option D": "Chaminda Vaas"
 	}
 ]
