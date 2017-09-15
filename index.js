@@ -123,7 +123,9 @@ io.on('connection', function(socket) {
 
 			let temp_msg = uc(msg);
 			let correct_answer = current_question_file[current_question_set[0]].answer;
-			let options = current_question_file[current_question_set[0].options];
+			let options = current_question_file[current_question_set[0]].options;
+
+			console.log(options);
 			let index_of_correct_answer = options.indexOf(correct_answer);
 
 			//index_of_correct_answer + 1 because user will input 1 for array element that is at index 0
@@ -151,7 +153,7 @@ io.on('connection', function(socket) {
 
 			let temp_msg = uc(msg);
 			let correct_answer = current_question_file[current_question_set[1]].answer;
-			let options = current_question_file[current_question_set[1].options];
+			let options = current_question_file[current_question_set[1]].options;
 			let index_of_correct_answer = options.indexOf(correct_answer);
 
 			if(string(temp_msg).include(index_of_correct_answer + 1) || string(temp_msg).include(uc(correct_answer))) {
@@ -176,7 +178,7 @@ io.on('connection', function(socket) {
 
 			let temp_msg = uc(msg);
 			let correct_answer = current_question_file[current_question_set[2]].answer;
-			let options = current_question_file[current_question_set[2].options];
+			let options = current_question_file[current_question_set[2]].options;
 			let index_of_correct_answer = options.indexOf(correct_answer);
 
 			if(string(temp_msg).include(index_of_correct_answer + 1) || string(temp_msg).include(uc(correct_answer))) {
@@ -201,7 +203,7 @@ io.on('connection', function(socket) {
 
 			let temp_msg = uc(msg);
 			let correct_answer = current_question_file[current_question_set[3]].answer;
-			let options = current_question_file[current_question_set[3].options];
+			let options = current_question_file[current_question_set[3]].options;
 			let index_of_correct_answer = options.indexOf(correct_answer);
 
 			if(string(temp_msg).include(index_of_correct_answer + 1) || string(temp_msg).include(uc(correct_answer))) {
@@ -226,7 +228,7 @@ io.on('connection', function(socket) {
 
 			let temp_msg = uc(msg);
 			let correct_answer = current_question_file[current_question_set[4]].answer;
-			let options = current_question_file[current_question_set[4].options];
+			let options = current_question_file[current_question_set[4]].options;
 			let index_of_correct_answer = options.indexOf(correct_answer);
 
 			if(string(temp_msg).include(index_of_correct_answer + 1) || string(temp_msg).include(uc(correct_answer))) {
@@ -251,7 +253,7 @@ io.on('connection', function(socket) {
 
 			let temp_msg = uc(msg);
 			let correct_answer = current_question_file[current_question_set[5]].answer;
-			let options = current_question_file[current_question_set[5].options];
+			let options = current_question_file[current_question_set[5]].options;
 			let index_of_correct_answer = options.indexOf(correct_answer);
 
 			if(string(temp_msg).include(index_of_correct_answer + 1) || string(temp_msg).include(uc(correct_answer))) {
@@ -276,7 +278,7 @@ io.on('connection', function(socket) {
 
 			let temp_msg = uc(msg);
 			let correct_answer = current_question_file[current_question_set[6]].answer;
-			let options = current_question_file[current_question_set[6].options];
+			let options = current_question_file[current_question_set[6]].options;
 			let index_of_correct_answer = options.indexOf(correct_answer);
 
 			//index_of_correct_answer + 1 because user will input 1 for array element that is at index 0
@@ -302,7 +304,7 @@ io.on('connection', function(socket) {
 
 			let temp_msg = uc(msg);
 			let correct_answer = current_question_file[current_question_set[7]].answer;
-			let options = current_question_file[current_question_set[7].options];
+			let options = current_question_file[current_question_set[7]].options;
 			let index_of_correct_answer = options.indexOf(correct_answer);
 
 			if(string(temp_msg).include(index_of_correct_answer + 1) || string(temp_msg).include(uc(correct_answer))) {
@@ -327,7 +329,7 @@ io.on('connection', function(socket) {
 
 			let temp_msg = uc(msg);
 			let correct_answer = current_question_file[current_question_set[8]].answer;
-			let options = current_question_file[current_question_set[8].options];
+			let options = current_question_file[current_question_set[8]].options;
 			let index_of_correct_answer = options.indexOf(correct_answer);
 
 			//index_of_correct_answer + 1 because user will input 1 for array element that is at index 0
@@ -354,7 +356,7 @@ io.on('connection', function(socket) {
 
 			let temp_msg = uc(msg);
 			let correct_answer = current_question_file[current_question_set[9]].answer;
-			let options = current_question_file[current_question_set[9].options];
+			let options = current_question_file[current_question_set[9]].options;
 			let index_of_correct_answer = options.indexOf(correct_answer);
 
 			//index_of_correct_answer + 1 because user will input 1 for array element that is at index 0
@@ -381,7 +383,7 @@ io.on('connection', function(socket) {
 
 			let temp_msg = uc(msg);
 			let correct_answer = current_question_file[current_question_set[10]].answer;
-			let options = current_question_file[current_question_set[10].options];
+			let options = current_question_file[current_question_set[10]].options;
 			let index_of_correct_answer = options.indexOf(correct_answer);
 
 			if(string(temp_msg).include(index_of_correct_answer + 1) || string(temp_msg).include(uc(correct_answer))) {
@@ -406,7 +408,7 @@ io.on('connection', function(socket) {
 
 			let temp_msg = uc(msg);
 			let correct_answer = current_question_file[current_question_set[11]].answer;
-			let options = current_question_file[current_question_set[11].options];
+			let options = current_question_file[current_question_set[11]].options;
 			let index_of_correct_answer = options.indexOf(correct_answer);
 
 			if(string(temp_msg).include(index_of_correct_answer + 1) || string(temp_msg).include(uc(correct_answer))) {

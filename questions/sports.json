@@ -96,7 +96,7 @@
 	},
 
 	{
-		"question": "Who is the captain of Pro Kabaddi League's team U Mumba?",
+		"question": "Who is the captain of Pro Kabaddi League's team 'U Mumba'?",
 		"answer": "Anup Kumar",
 		"options": ["Deepak Mondal","Anup Kumar","Mohit Chillar","Surender Nada"]
 	},
@@ -120,13 +120,13 @@
 	},
 
 	{
-		"question": "In football",
+		"question": "In football, which team is nicknamed 'Galacticos'?",
 		"answer": " which team is nicknamed 'Galacticos'?",
 		"options": ["Real Madrid","Real Madrid","Juventus","Bayern Munich"]
 	},
 
 	{
-		"question": "We are One",
+		"question": "'We are One', the official song of FIFA world cup 2014 was recorded by?",
 		"answer": " the official song of FIFA world cup 2014 was recorded by?",
 		"options": ["Pitbull","Shakira","Pitbull","Akon"]
 	},
@@ -168,7 +168,7 @@
 	},
 
 	{
-		"question": "The term ",
+		"question": "The term 'Gully' is associated with which sport?",
 		"answer": "Cricket",
 		"options": ["Kabaddi","Fishing","Cricket","Tennis"]
 	},
@@ -186,7 +186,7 @@
 	},
 
 	{
-		"question": "Federation Cup",
+		"question": "'Federation Cup' in India is associated with which game?",
 		"answer": "Football",
 		"options": ["Hockey","Football","Cricket","Rugby"]
 	},
