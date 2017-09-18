@@ -467,7 +467,7 @@ var state_start = function() {
 };
 
 var state_category = function() {
-	io.emit('bot message', {'msg': 'Nice to meet you '+ getName()+ '. What category do you pick? 1)Entertainment 2)Sports?', 'score': getScore()});
+	io.emit('bot message', {'msg': 'Nice to meet you '+ getName()+ '. What category do you pick?', 'options' : ['Entertainment','Sports'], 'score': getScore()});
 };
 
 var state_begin_quiz = function() {
