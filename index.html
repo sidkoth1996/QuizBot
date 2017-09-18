@@ -39,7 +39,9 @@
           $('#messages').append($('<li>').text(msg.msg));
 
           if(msg.options != null) {
-            $('#messages').append($('<li id="options">').text(msg.options));
+            for(var i=1; i < msg.options.length +1; i++) {
+              $('#messages').append($('<li id="options">').text(i+')'+msg.options[i-1]));
+            }
           }
         });
       });

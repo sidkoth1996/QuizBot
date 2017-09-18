@@ -125,7 +125,7 @@ io.on('connection', function(socket) {
 			let correct_answer = current_question_file[current_question_set[0]].answer;
 			let options = current_question_file[current_question_set[0]].options;
 
-			console.log(options);
+		
 			let index_of_correct_answer = options.indexOf(correct_answer);
 
 			//index_of_correct_answer + 1 because user will input 1 for array element that is at index 0
@@ -464,6 +464,8 @@ io.on('connection', function(socket) {
 
 var state_start = function() {
 	io.emit('bot message', {'msg': 'Hello, I am QuizBot. What is your name?', 'score': getScore()});
+
+	io.emit('reset timer', {});
 };
 
 var state_category = function() {
@@ -602,8 +604,9 @@ var state_question_12 = function() {
 };
 
 var state_end = function() {
-
 	io.emit('bot message', {'msg': 'Thank you for playing '+getName()+' Your score is '+getScore()+' To restart type "restart".', 'score':getScore()});
+
+	io.emit('reset timer', {}); //Event emitted to reset the timer
 };
 
 //Getter and setter functions
