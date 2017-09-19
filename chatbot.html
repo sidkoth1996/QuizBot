@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="https://getbootstrap.com/docs/3.3/favicon.ico">
 
-    <title>Welcome to Chatbot quiz</title>
+    <title>Welcome to QuizBot</title>
 
     <!-- Bootstrap core CSS -->
     <link href="files/bootstrap.css" rel="stylesheet">
@@ -52,6 +52,68 @@ function MM_swapImage() { //v3.0
    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
   </script>
+
+  <script src="files/jquery.js"></script>
+  <script src="files/bootstrap.js"></script>
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="files/ie10-viewport-bug-workaround.js"></script>
+
+
+
+  <!--Script to communicate with the backend-->
+
+  <script src = "/socket.io/socket.io.js"></script>
+  <script src = "https://code.jquery.com/jquery-1.11.1.js"></script>
+
+  <script>
+  $(function() {
+        var socket = io();
+        $('form').submit(function() {
+
+            $('#messages').append($('<li class="chat">').text($('#m').val()));
+
+            socket.emit('user message', $('#m').val());
+            $('#m').val('');
+            return false;
+
+        });
+
+        socket.on('bot message', function(msg) {
+          $('#messages').append($('<li>').text(msg.msg));
+
+          if(msg.options != null) {
+            for(var i=1; i < msg.options.length+1; i++) {
+              $('#messages').append($('<li>').text(i+') '+msg.options[i-1]));
+            }
+          }
+        });
+
+        socket.on('correct answer', function(msg) {
+         
+        });
+
+        socket.on('wrong answer', function(msg) {
+          
+        });
+
+        socket.on('update leaderboard', function(msg) {
+          $('#leaderboard').empty();
+
+          for(var i=0; i< msg.length; i++) {
+            $('#leaderboard').append($('<li>').text(msg[i].name+' - '+msg[i].score));
+          }
+
+        });
+
+      });
+
+  </script>
+
+
+
+
+
+
 </head>
 
   <body onLoad="MM_preloadImages('files/VolOff.png')">
@@ -78,31 +140,26 @@ function MM_swapImage() { //v3.0
 <div class="col-lg-6" style="padding:10px;height:477px; border:1px solid #337ab7; border-radius:7px; position:relative;" align="left">
 <div align="center"><button type="button" class="btn btn-primary">YOUR TOTAL SCORE</button></div>
 <div style="height:360px; width:100%; overflow-y:scroll;">
-<ul style="list-style-type:none; line-height:25px; margin:10px 10px 0px -18px;">
-  <li>Bot: Hello, I am QuizBot. What is your name?</li>
-  <li class="chat">User: My name is Siddharth</li>
-  <li>Bot: Nice to meet you Siddharth. What category do you pick </li>
-  <li>Bot: 1) Entertainment &nbsp; 2) Sports </li>
-  <li class="chat">User: 1</li>
-  <li>Bot: Great, I shall ask you questions related to Entertainment. You have 1 minute<br> to answer 12 questions. Type “start”</li>
-  <li class="chat">User: start</li>
-  <li>Bot: Question 1 </li>
-  <li>Bot: 1) Option 1 &nbsp; 2) Option 2 &nbsp; 3) Option 3 &nbsp; 4) Option 4</li>
+
+<!--Messages are received here-->
+
+<ul id="messages" style="list-style-type:none; line-height:25px; margin:10px 10px 0px -18px;">
 </ul>
+
+
+
 </div>
 	<div class="row" style="bottom:0px; position:absolute; float:left; margin:0 auto; margin-bottom:15px;">
-    	<input name="" type="text" style="height:32px; width:490px; border:#999 1px solid; padding:5px;"> &nbsp;
+    <form action= "">
+    	<input id="m" autocomplete="off" type="text" style="height:32px; width:490px; border:#999 1px solid; padding:5px;"> &nbsp;
         <button type="button" class="btn btn-primary">Send</button>
+    </form>
 	</div>
 </div>
      
       
       <div class="col-lg-3" style="padding:10px;height:477px;" align="center"> <button type="button" class="btn btn-primary">LEADERBOARD</button> <br>
-<ul style="list-style-type:none; line-height:25px; margin:10px 0px 0px -18px; text-align:left;">
-  <li>Sidharth Kothari</li>
-  <li>Raj Sharma</li>
-  <li>Vinay Kohli</li>
-  <li>R.Naraynan</li>
+<ul id="leaderboard" style="list-style-type:none; line-height:25px; margin:10px 0px 0px -18px; text-align:left;">
 </ul>
       </div>
   </div>
@@ -111,16 +168,5 @@ function MM_swapImage() { //v3.0
       <div class="container">
       </div>
     </footer>
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="files/jquery.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="files/bootstrap.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="files/ie10-viewport-bug-workaround.js"></script>
-  
 
 </body></html>
