@@ -92,10 +92,10 @@ setInterval(ScrollDiv,100);
           trailWidth: 1,
           duration: 60000,
           text: {
-            autoStyleContainer: false
+            autoStyleContainer: true
           },
-          from: { color: '#aaa', width: 1 },
-          to: { color: '#333', width: 4 },
+          from: { color: '#00416b', width: 1 },
+          to: { color: '#f44336', width: 4 },
           // Set default step function for all animate calls
           step: function(state, circle) {
             circle.path.setAttribute('stroke', state.color);
@@ -107,19 +107,20 @@ setInterval(ScrollDiv,100);
             } else if(value<= 99) {
               circle.setText(value);
             }
-            else [
-              circle.setText("Time up!")]
+            else {
+              circle.setText("Time's up!");
+            }
           }
         });
-          bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
-          bar.text.style.fontSize = '4rem';
+          bar.text.style.fontFamily = 'Arial';
+          bar.text.style.fontSize = '3rem';
 
         var myDiv = document.getElementById('scroll');
         var socket = io();
+        var score = document.getElementById('score');
 
         $('form').submit(function() {
 
-            bar.animate(1.0);
             $('#messages').append($('<li class="chat">').text($('#m').val()));
             myDiv.scrollTop = myDiv.scrollHeight;
 
@@ -131,6 +132,7 @@ setInterval(ScrollDiv,100);
 
         socket.on('bot message', function(msg) {
           $('#messages').append($('<li>').text(msg.msg));
+          myDiv.scrollTop = myDiv.scrollHeight;
 
           if(msg.options != null) {
             for(var i=1; i < msg.options.length+1; i++) {
@@ -150,11 +152,21 @@ setInterval(ScrollDiv,100);
 
         socket.on('update leaderboard', function(msg) {
           $('#leaderboard').empty();
-
-          for(var i=0; i< msg.length; i++) {
+          for(var i=0; i < msg.length; i++) {
             $('#leaderboard').append($('<li>').text(msg[i].name+' - '+msg[i].score));
           }
+        });
 
+        socket.on('reset timer', function() {
+          bar.set(0.0);
+          bar.setText(0);
+        });
+
+        socket.on('start timer', function() {
+          bar.animate(1.0, function() {
+            socket.emit('end timer', {});
+            bar.setText("Time is up");
+          })
         });
 
       });
@@ -191,7 +203,7 @@ setInterval(ScrollDiv,100);
       </div>
       
 <div class="col-lg-6" style="padding:10px;height:477px; border:1px solid #337ab7; border-radius:7px; position:relative;" align="left">
-<div align="center"><button type="button" class="btn btn-primary">YOUR TOTAL SCORE</button></div>
+<div id="score" align="center"><button type="button" class="btn btn-primary">YOUR TOTAL SCORE</button></div>
 <div id="scroll" style="height:360px; width:100%; overflow-y:scroll;">
 
 <!--Messages are received here-->

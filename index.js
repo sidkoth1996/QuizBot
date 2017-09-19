@@ -448,7 +448,7 @@ io.on('connection', function(socket) {
 		}
 		else if(getState() == States.state_end) {
 
-			if(!string(msg).include('restart')) {
+			if(!string(uc(msg)).include('RESTART')) {
 				state_did_not_understand();
 				state_end();
 			}
@@ -457,6 +457,7 @@ io.on('connection', function(socket) {
 				state_start();
 			}
 
+			console.log(leaderboard.returnLeaderboard());
 			io.emit('update leaderboard', leaderboard.returnLeaderboard());
 			console.log(leaderboard.returnLeaderboard());
 		}
@@ -529,6 +530,8 @@ var state_question_1 = function() {
 	let options = current_question_file[current_question_set[0]].options;
 
 	io.emit('bot message', {'msg': question, 'options': options, 'score': getScore()});
+
+	io.emit('start timer', {});
 };
 
 var state_question_2 = function() {
