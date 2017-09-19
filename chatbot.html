@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://getbootstrap.com/docs/3.3/favicon.ico">
+
+    <title>Welcome to Chatbot quiz</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="files/bootstrap.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="files/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="files/sticky-footer-navbar.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="files/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
+</head>
+
+  <body onLoad="MM_preloadImages('files/VolOff.png')">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top topgrad" style="height:90px; margin:0 auto;">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="95%" align="center"><br><a href="#"><img src="files/clover.png" width="200" height="46"></a></td>
+    <td width="5%">
+<!--    <audio src="bg.mp3" autoplay="autoplay" loop="loop"></audio>
+    <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','files/VolOff.png',1)"><img src="files/VolOn.png" alt="Mute" name="Image3" width="43" height="49" border="0"></a>--></td>
+  </tr>
+</table>
+
+  </nav>
+
+    <!-- Begin page content -->
+    <div class="container">
+	  <div class="page-header"></div>
+  <div class="row">    
+      <div class="col-lg-3" style="padding:10px;height:477px;" align="center"> <button type="button" class="btn btn-primary">TIMING</button> <br><br><br><br> <img src="files/QuizScreen.jpg" width="219" height="219"> </div>
+      
+<div class="col-lg-6" style="padding:10px;height:477px; border:1px solid #337ab7; border-radius:7px; position:relative;" align="left">
+<div align="center"><button type="button" class="btn btn-primary">YOUR TOTAL SCORE</button></div>
+<div style="height:360px; width:100%; overflow-y:scroll;">
+<ul style="list-style-type:none; line-height:25px; margin:10px 10px 0px -18px;">
+  <li>Bot: Hello, I am QuizBot. What is your name?</li>
+  <li class="chat">User: My name is Siddharth</li>
+  <li>Bot: Nice to meet you Siddharth. What category do you pick </li>
+  <li>Bot: 1) Entertainment &nbsp; 2) Sports </li>
+  <li class="chat">User: 1</li>
+  <li>Bot: Great, I shall ask you questions related to Entertainment. You have 1 minute<br> to answer 12 questions. Type “start”</li>
+  <li class="chat">User: start</li>
+  <li>Bot: Question 1 </li>
+  <li>Bot: 1) Option 1 &nbsp; 2) Option 2 &nbsp; 3) Option 3 &nbsp; 4) Option 4</li>
+</ul>
+</div>
+	<div class="row" style="bottom:0px; position:absolute; float:left; margin:0 auto; margin-bottom:15px;">
+    	<input name="" type="text" style="height:32px; width:490px; border:#999 1px solid; padding:5px;"> &nbsp;
+        <button type="button" class="btn btn-primary">Send</button>
+	</div>
+</div>
+     
+      
+      <div class="col-lg-3" style="padding:10px;height:477px;" align="center"> <button type="button" class="btn btn-primary">LEADERBOARD</button> <br>
+<ul style="list-style-type:none; line-height:25px; margin:10px 0px 0px -18px; text-align:left;">
+  <li>Sidharth Kothari</li>
+  <li>Raj Sharma</li>
+  <li>Vinay Kohli</li>
+  <li>R.Naraynan</li>
+</ul>
+      </div>
+  </div>
+</div>
+    <footer class="footer">
+      <div class="container">
+      </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="files/jquery.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="files/bootstrap.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="files/ie10-viewport-bug-workaround.js"></script>
+  
+
+</body></html>

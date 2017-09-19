@@ -12,6 +12,7 @@ var jsonfile = require('jsonfile');
 var leaderboard = require('./leaderboard.js');
 var stopword = require('stopword');
 var uc = require('upper-case');
+var express = require('express');
 
 const PORT = 8081;
 
@@ -52,9 +53,13 @@ var current_question_file; //Contains the json file with the questions for indiv
 
 leaderboard.createNewLeaderboard();
 
+//Serve chatbot.html
 app.get('/',function(req,res) {
-	res.sendFile(__dirname +'/index.html');
+	res.sendFile(__dirname +'/chatbot.html');
 });
+
+//Serve static files associated with chatbot.html
+app.use("/files", express.static(__dirname + '/files'));
 
 //Event fired when the user just began the chat
 io.on('connection', function(socket) {
@@ -73,10 +78,20 @@ io.on('connection', function(socket) {
 		console.log(getState());
 		
 		if(getState() == States.state_start) {
-			let temp_name = stopword.removeStopwords(msg.split(' '));
-			setName(temp_name.join(' '));
-			setState(States.state_category); //Assign next state
-			state_category();
+			if(msg != "") {
+				let temp_name = stopword.removeStopwords(msg.split(' '));
+				setName(temp_name.join(' '));
+				setState(States.state_category); //Assign next state
+				state_category();
+			}
+			else {
+				state_did_not_understand();
+				setState(States.state_start);
+				state_start();
+
+			}
+
+			initialiseScore();
 		}
 		else if(getState() == States.state_category) {
 			let question_file; 
@@ -132,7 +147,7 @@ io.on('connection', function(socket) {
 
 			if(string(temp_msg).include(index_of_correct_answer + 1) || string(temp_msg).include(uc(correct_answer))) {
 				console.log("Correct answer");
-				
+			
 				io.emit('correct answer', {});
 
 				//Increase score

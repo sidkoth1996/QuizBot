@@ -1,151 +1,303 @@
 [
-	{
-		"question":"Question 1",
-		"answer":"XYZ"
-	},
 
-	{
-		"question":"Question 2",
-		"answer":"ZYZ"
-	},
+  {
+    "question": "Which bollywood actress is known as 'Piggy Chops'?",
+    "answer": "Priyanka Chopra",
+    "options": ["Priyanka Chopra","Parineeti Chopra","Alia Bhatt","Deepika Padukone"]
+  },
 
-	{
-		"question":"Question 3",
-		"answer":"XYZ"
-	},
+  {
+    "question": "Which of these Indian actors has never featured in a Hollywood movie?",
+    "answer": "Shahid Kapoor",
+    "options": ["Om Puri","Shahid Kapoor","Amitabh Bachchan","Irrfan Khan"]
+  },
 
-	{
-		"question":"Question 4",
-		"answer":"ZYZ"
-	},
+  {
+    "question": "Which band sang the 'F.R.I.E.N.D.S' opening track?",
+    "answer": "The Rembrandts",
+    "options": ["The Rembrandts","Blue","West Life","Back Street Boys"]
+  },
 
-	{
-		"question":"Question 5",
-		"answer":"XYZ"
-	},
+  {
+    "question": "Which Indian actor made a cameo in the original music video of 'Lift Karade'",
+    "answer": "Govinda",
+    "options": ["Amitabh Bachchan","Shahrukh Khan","Salman Khan","Govinda"]
+  },
 
-	{
-		"question":"Question 6",
-		"answer":"ZYZ"
-	},
+  {
+    "question": "Which of the following actresses is an engineer?",
+    "answer": "Kriti Sanon",
+    "options": ["Deepika Padukone","Kriti Sanon","Anushka Sharma","Sonam Kapoor"]
+  },
 
-	{
-		"question":"Question 7",
-		"answer":"XYZ"
-	},
+  {
+    "question": "Which song won A.R. Rahman the Oscar?",
+    "answer": "Jai Ho",
+    "options": ["Vande Mataram","Dil Se","Jai Ho","O Saya"]
+  },
 
-	{
-		"question":"Question 8",
-		"answer":"ZYZ"
-	},
+  {
+    "question": "Who was announced the Brand Ambassador of Gionee in Aug 2016?",
+    "answer": "Alia Bhatt",
+    "options": ["Alia Bhatt","Parineeti Chopra","Anushka Sharma","Sonam Kapoor"]
+  },
 
-	{
-		"question":"Question 9",
-		"answer":"XYZ"
-	},
+  {
+    "question": "The father of which of the following actors is not an actor?",
+    "answer": "Akshay Kumar",
+    "options": ["Akshay Kumar","Sanjay Dutt","Tiger Shroff","Ranbir Kapoor"]
+  },
 
-	{
-		"question":"Question 10",
-		"answer":"ZYZ"
-	},
+  {
+    "question": "Who played Neo in The Matrix?",
+    "answer": "Keanu Reaves",
+    "options":["Brad Pitt","Tom Cruise","Jonny Depp","Keanu Reaves"]
+  },
 
-	{
-		"question":"Question 11",
-		"answer":"XYZ"
-	},
+  {
+    "question": "Which country is Ed Sheeran from?",
+    "answer": "England",
+    "options": ["Mexico","France","Portugal","England"]
+  },
 
-	{
-		"question":"Question 12",
-		"answer":"ZYZ"
-	},
+  {
+    "question": "A.R. Rahman has not composed for which of these movies?",
+    "answer": "Ae Dil Hai Mushkil",
+    "options": ["Ae Dil Hai Mushkil","Jab Tak Hai Jaan","Swades","Lagaan"]
+  },
 
-	{
-		"question":"Question 13",
-		"answer":"XYZ"
-	},
+  {
+    "question": "Which of the following actresses was born on the Ides of March?",
+    "answer": "Alia Bhatt",
+    "options": ["Alia Bhatt","Diana Penty","Anushka Sharma","Priyanka Chopra"]
+  },
 
-	{
-		"question":"Question 14",
-		"answer":"ZYZ"
-	},
+  {
+    "question": "Which actor's fashion label is called 'SKULT'",
+    "answer": "Shahid Kapoor",
+    "options": ["Saif Ali Khan","Ajay Devgan","John Abraham","Shahid Kapoor"]
+  },
 
-	{
-		"question":"Question 15",
-		"answer":"XYZ"
-	},
+  {
+    "question": "Deepika Padukone endorses which jewellery brand?",
+    "answer": "Tanishq",
+    "options": ["Tbz","Joyalukkas","Nakshatra ","Tanishq"]
+  },
 
-	{
-		"question":"Question 16",
-		"answer":"ZYZ"
-	},
+  {
+    "question": "Who played the lead actor in the hindi 2016 thriller 'Trapped'?",
+    "answer": "Rajkummar Rao",
+    "options": ["Rajkummar Rao","Nawazuddin Siddiqui","Manoj Bajpayee","Irrfan Khan"]
+  },
 
-	{
-		"question":"Question 17",
-		"answer":"XYZ"
-	},
+  {
+    "question": "Which country is Enrique Iglesias from?",
+    "answer": "Spain",
+    "options": ["Mexico","Israel","Greece","Spain"]
+  },
 
-	{
-		"question":"Question 18",
-		"answer":"ZYZ"
-	},
+  {
+    "question": "Which one the below is not a Justin Beiber song?",
+    "answer": "What Do You Mean",
+    "options": ["Gangster","What Do You Mean","One Love","Where Do You Go"]
+  },
 
-	{
-		"question":"Question 19",
-		"answer":"XYZ"
-	},
+  {
+    "question": "Before Akshay Kumar became an actor, he worked as?",
+    "answer": "Waiter",
+    "options": ["Model","Waiter","Clerk","Reporter"]
+  },
 
-	{
-		"question":"Question 20",
-		"answer":"ZYZ"
-	},
+  {
+    "question": "Who won the 2016 Oscar for the 'Best Actor'",
+    "answer": "Leonardo Di Caprio",
+    "options": ["Jonny Depp","Brad Pitt","Leonardo Di Caprio","Tom Cruise"]
+  },
 
-	{
-		"question":"Question 21",
-		"answer":"XYZ"
-	},
+  {
+    "question": "The movie Dangal is based on which of these wrestlers?",
+    "answer": "Geeta Phogat",
+    "options": ["Geeta Phogat","Sunita Phogat","Sakshi Malik","Vinesh Phogat"]
+  },
 
-	{
-		"question":"Question 22",
-		"answer":"ZYZ"
-	},
+  {
+    "question": "Who is the founder of Whistling Woods International Institute?",
+    "answer": "Subhash Ghai",
+    "options": ["Subhash Ghai","Naseeruddin Shah","Om Puri","Anupam Kher"]
+  },
 
-	{
-		"question":"Question 23",
-		"answer":"XYZ"
-	},
+  {
+    "question": "Salman Khan sung which famous track from the movie 'Hero'?",
+    "answer": "Main Hoon Hero",
+    "options": ["Hangover","440 Volt","Jumme Ki Raat","Main Hoon Hero"]
+  },
 
-	{
-		"question":"Question 24",
-		"answer":"ZYZ"
-	},
+  {
+    "question": "In the movie Rustam, Akshay Kumar played which of the following characters?",
+    "answer": "Naval Officer",
+    "options": ["Spy","Lawyer","Army Officer","Naval Officer"]
+  },
 
-	{
-		"question":"Question 25",
-		"answer":"XYZ"
-	},
+  {
+    "question": "Priyanka Chopra featured in which of the following movies?",
+    "answer": "Baywatch",
+    "options": ["XXX","Baywatch","Fast & Furious 8","Logan"]
+  },
 
-	{
-		"question":"Question 26",
-		"answer":"ZYZ"
-	},
+  {
+    "question": "Paul Walker was a part of how many 'Fast & Furious' movies?",
+    "answer": "6",
+    "options": ["7","5","6","4"]
+  },
 
-	{
-		"question":"Question 27",
-		"answer":"XYZ"
-	},
+  {
+    "question": "Who killed Prince Oberyn Martell of Dorne, in the HBO series 'Game of Thrones'?",
+    "answer": "The Mountain",
+    "options": ["The Hound","Tyrion Lannister","Cersei Lannister","The Mountain"]
+  },
 
-	{
-		"question":"Question 28",
-		"answer":"ZYZ"
-	},
+  {
+    "question": "Who plays Jamie Lannister in the HBO series 'Game of Thrones'?",
+    "answer": "Nikolaj Coster-Waldau",
+    "options": ["Kit Harington","Nikolaj Coster-Waldau","Peter Dinklage","Sean Bean"]
+  },
 
-	{
-		"question":"Question 29",
-		"answer":"XYZ"
-	},
+  {
+    "question": "What is the profession of Lily Aldrin in the sitcom 'HIMYM'?",
+    "answer": "Kindergarten Teacher",
+    "options": ["Architect","Kindergarten Teacher","Designer","TV Reporter"]
+  },
 
-	{
-		"question":"Question 30",
-		"answer":"ZYZ"
-	}
+  {
+    "question": "What is Ranveer Kapoor's real name?",
+    "answer": "Ranveer Bhavnani",
+    "options": ["Rajiv Bhatia","Ajay Singh","Ranveer Bhavnani","Ajay Bhavnani"]
+  },
+
+  {
+    "question": "Name the iconic café in the famous sitcom 'F.R.I.E.N.D.S'?",
+    "answer": "Central Perk",
+    "options": ["Cafe central","Mid Town Cafe","Friends cafe","Central Perk"]
+  },
+
+  {
+    "question": "What is Mithun Chakraborty's real name?",
+    "answer": "Gourango Chakraborty",
+    "options": ["Dilip Chakraborty","Gourango Chakraborty","Mithun Bose","Gourango Saha"]
+  },
+
+  {
+    "question": "What was Aamir Khan's character's real name in Sarfarosh?",
+    "answer": "Ajay Singh Rathod",
+    "options": ["Ranchod Das Chanchad","Phunsuk Wangdu","Amar Damjee","Ajay Singh Rathod"]
+  },
+
+  {
+    "question": "Which of these actresses featured in the original video song of 'Kolaveri Di'",
+    "answer": "Shruti Haasan",
+    "options": ["Tamannaah","Anushka Shetty","Kajal A","Shruti Haasan"]
+  },
+
+  {
+    "question": "What is Dilip Kumar's real name?",
+    "answer": "Muhammed Yusuf Khan",
+    "options": ["Amjad Rashid Khan","Muhammed Yusuf Khan","Yousuf Youhana","Muhammed Yusuf Tahir"]
+  },
+
+  {
+    "question": "Who directed the Aamir Khan movie, Sarfarosh?",
+    "answer": "John Matthew Matthan",
+    "options": ["John Matthew Matthan","Ashutosh Gowariker","Rajkumar Santoshi","Vidhu Vinod Chopra"]
+  },
+
+  {
+    "question": "Who played Batman in the movie 'Batman Rises'?",
+    "answer": "Christian Bale",
+    "options": ["Ben Affleck","Christian Bale","George Clooney","Will Arnett"]
+  },
+
+  {
+    "question": "Name the Indian actor in the sitcom Big Bang Theory",
+    "answer": "Kunal Nayyar",
+    "options": ["Kal Penn","Russel Peters","M. Night Shyamalan","Kunal Nayyar"]
+  },
+
+  {
+    "question": "What is Salman Khan's Full name?",
+    "answer": "Abdul Rashid Salim Salman Khan",
+    "options": ["Muhammed Yusuf Khan","Abdul Rashid Salim Salman Khan","Tahir Muhammed Shaikh","Mazar Tahir Shaikh"]
+  },
+
+  {
+    "question": "Which actor played a magician in Christopher Nolan's 'Prestige'?",
+    "answer": "Hugh Jackman",
+    "options": ["Hugh Jackman","Edward Norton","Jesse Eisenberg","James Franco"]
+  },
+
+  {
+    "question": "For which movie did Kathryn Bigelow win an Oscar?",
+    "answer": "The Hurt Locker",
+    "options": ["The Hurt Locker","The King's Speech","Gravity","The Artist"]
+  },
+
+  {
+    "question": "Who played Spiderman in the movie 'The Amazing Spiderman'?",
+    "answer": "Tobey Maguire",
+    "options": ["Andrew Garfield","Tobey Maguire","Robert Downey Junior","Mark Ruffalo"]
+  },
+
+  {
+    "question": "The first woman to win an Oscar for 'Best Director'",
+    "answer": "Kathryn Bigelow",
+    "options": ["Mira Nair","Deepa Mehta","Kathryn Bigelow","Debra Granik"]
+  },
+
+  {
+    "question": "Which actor's real last name is Nagrath?",
+    "answer": "Hrithik Roshan",
+    "options": ["Suneil Shetty","R. Madhavan","Hrithik Roshan","Sonu Sood"]
+  },
+
+  {
+    "question": "Who directed the Leonardo DiCaprio thriller 'Shutter Island'?",
+    "answer": "Martin Scorsese",
+    "options": ["Martin Scorsese","Christopher Nolan","Robert De Niro","Steven Spielberg"]
+  },
+
+  {
+    "question": "Who directed the horror classic, 'The Sixth Sense'?",
+    "answer": "M. Night Shyamalan",
+    "options": ["M. Night Shyamalan","Christopher Nolan","Stephen King","Tobe Hooper"]
+  },
+
+  {
+    "question": "What is Ajay Devgan's real name?",
+    "answer": "Vishal Devgan",
+    "options": ["Vishal Devgan","Amit Devgan","Vijay Devgan","Ajit Devgan"]
+  },
+
+  {
+    "question": "The highest grossing Indian movie ever?",
+    "answer": "Dangal",
+    "options": ["DDLJ","Dangal","3 Idiots","Bahubali 2"]
+  },
+
+  {
+    "question": "The highest grossing Hollywood movie ever?",
+    "answer": "Avatar",
+    "options": ["Titanic","Avatar","The Avengers","Spider-Man Homecoming"]
+  },
+
+  {
+    "question": "Which of these Hollywood movies was NOT shot in India?",
+    "answer": "The Hulk",
+    "options": ["The Dark Knight Rises","Jobs","Mission Impossible 4","The Hulk"]
+  },
+
+  {
+    "question": "The 1st Indian to win an Oscar?",
+    "answer": "Bhanu Athaiya",
+    "options": ["Satyajit Ray","Bhanu Athaiya","A. R. Rahman","Resul Pookutty"]
+  }
+
 ]
