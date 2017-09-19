@@ -79,14 +79,47 @@ setInterval(ScrollDiv,100);
 
   <script src = "/socket.io/socket.io.js"></script>
   <script src = "https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src = "/files/progressbar.js"></script>
 
   <script>
   $(function() {
 
-    var myDiv = document.getElementById('scroll');
+        var bar = new ProgressBar.Circle('#timer', {
+          color: '#aaa',
+          // This has to be the same size as the maximum width to
+          // prevent clipping
+          strokeWidth: 4,
+          trailWidth: 1,
+          duration: 60000,
+          text: {
+            autoStyleContainer: false
+          },
+          from: { color: '#aaa', width: 1 },
+          to: { color: '#333', width: 4 },
+          // Set default step function for all animate calls
+          step: function(state, circle) {
+            circle.path.setAttribute('stroke', state.color);
+            circle.path.setAttribute('stroke-width', state.width);
+
+            var value = Math.round(circle.value() * 100);
+            if (value === 0) {
+              circle.setText('');
+            } else if(value<= 99) {
+              circle.setText(value);
+            }
+            else [
+              circle.setText("Time up!")]
+          }
+        });
+          bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+          bar.text.style.fontSize = '4rem';
+
+        var myDiv = document.getElementById('scroll');
         var socket = io();
+
         $('form').submit(function() {
 
+            bar.animate(1.0);
             $('#messages').append($('<li class="chat">').text($('#m').val()));
             myDiv.scrollTop = myDiv.scrollHeight;
 
@@ -154,7 +187,8 @@ setInterval(ScrollDiv,100);
     <div class="container">
 	  <div class="page-header"></div>
   <div class="row">    
-      <div class="col-lg-3" style="padding:10px;height:477px;" align="center"> <button type="button" class="btn btn-primary">TIMING</button> <br><br><br><br> <img src="files/QuizScreen.jpg" width="219" height="219"> </div>
+      <div class="col-lg-3" style="padding:10px;height:477px;" align="center"> <button type="button" class="btn btn-primary">TIMING</button> <br><br><br><br> <div id="timer" style="width:200px; height:200px;"></div> 
+      </div>
       
 <div class="col-lg-6" style="padding:10px;height:477px; border:1px solid #337ab7; border-radius:7px; position:relative;" align="left">
 <div align="center"><button type="button" class="btn btn-primary">YOUR TOTAL SCORE</button></div>
