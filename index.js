@@ -61,6 +61,9 @@ app.get('/',function(req,res) {
 //Serve static files associated with chatbot.html
 app.use("/files", express.static(__dirname + '/files'));
 
+//Serve audio files associated with chatbot.html
+app.use("/sounds", express.static(__dirname + '/sounds'));
+
 //Event fired when the user just began the chat
 io.on('connection', function(socket) {
 	console.log("User connected with ID: "+socket.id);
@@ -481,7 +484,7 @@ io.on('connection', function(socket) {
 var state_start = function() {
 	io.emit('bot message', {'msg': 'Hello, I am QuizBot. What is your name?', 'score': getScore()});
 
-	io.emit('reset timer', {});
+	//io.emit('reset timer', {});
 };
 
 var state_category = function() {

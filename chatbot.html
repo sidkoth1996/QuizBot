@@ -59,30 +59,40 @@ function MM_swapImage() { //v3.0
   <script src="files/ie10-viewport-bug-workaround.js"></script>
 
   <script type='text/javascript'> </script>
-  <!--Autoscroll script-->
-
-  <!--
-  function ScrollDiv(){
-
-   if(document.getElementById('scroll').scrollTop<(document.getElementById('scroll').scrollHeight-document.getElementById('scroll').offsetHeight)){-1
-         document.getElementById('scroll').scrollTop=document.getElementById('scroll').scrollTop+1
-         }
-   else {document.getElementById('scroll').scrollTop=0;}
-}
-
-setInterval(ScrollDiv,100);
--->
-
-
 
   <!--Script to communicate with the backend-->
 
   <script src = "/socket.io/socket.io.js"></script>
   <script src = "https://code.jquery.com/jquery-1.11.1.js"></script>
   <script src = "/files/progressbar.js"></script>
+  <script src = "/files/ion.sound.min.js"></script>
 
   <script>
   $(function() {
+
+      ion.sound({
+        sounds: [
+          {name: "sound_background"}
+        ],
+        path: "sounds/",
+        preload: true,
+        volume: 1.0,
+        multiplay: false,
+        loop: true
+      });
+
+      ion.sound({
+        sounds: [
+          {name:"sound_success"},
+          {name:"sound_failure"}
+        ],
+        path: "sounds/",
+        preload: true,
+        volume: 0.5,
+        multiplay: true,
+        loop: false
+      });
+
 
         var bar = new ProgressBar.Circle('#timer', {
           color: '#aaa',
@@ -118,6 +128,7 @@ setInterval(ScrollDiv,100);
         var myDiv = document.getElementById('scroll');
         var socket = io();
         var score = document.getElementById('score');
+        var audio = document.getElementById('sound');
 
         $('form').submit(function() {
 
@@ -143,10 +154,14 @@ setInterval(ScrollDiv,100);
         });
 
         socket.on('correct answer', function(msg) {
+
+          ion.sound.play("sound_success");
          
         });
 
         socket.on('wrong answer', function(msg) {
+
+          ion.sound.play("sound_failure");
           
         });
 
@@ -158,17 +173,25 @@ setInterval(ScrollDiv,100);
         });
 
         socket.on('reset timer', function() {
+
+          //Pause and reset the background sound
+          ion.sound.stop("sound_background");
+
           bar.set(0.0);
           bar.setText(0);
         });
 
         socket.on('start timer', function() {
+
+          //Play background sound here
+          ion.sound.play("sound_background");
+
           bar.animate(1.0, function() {
             socket.emit('end timer', {});
             bar.setText("Time is up");
+
           })
         });
-
       });
 
   </script>
@@ -181,6 +204,9 @@ setInterval(ScrollDiv,100);
 </head>
 
   <body onLoad="MM_preloadImages('files/VolOff.png')">
+
+  
+
 
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top topgrad" style="height:90px; margin:0 auto;">
