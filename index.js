@@ -16,7 +16,7 @@ var express = require('express');
 
 const PORT = 8081;
 
-//Question sets with random unique integers between 1 and 30
+//Question sets with random unique integers between 1 and 49
 const question_set_1 = [6,3,47,23,20,41,29,28,11,43,14,38];
 const question_set_2 = [48,17,40,20,21,29,8,23,22,6,32,24];
 const question_set_3 = [44,34,39,27,7,14,6,17,23,8,32,24];
@@ -443,7 +443,6 @@ io.on('connection', function(socket) {
 
 			setState(States.state_end);
 			state_end();
-			leaderboard.addScore(getName(), getScore());
 
 		}
 		else if(getState() == States.state_end) {
@@ -456,7 +455,8 @@ io.on('connection', function(socket) {
 				setState(States.state_start);
 				state_start();
 			}
-
+			//Save user name and score to leaderboard
+			leaderboard.addScore(getName(), getScore());
 			console.log(leaderboard.returnLeaderboard());
 			io.emit('update leaderboard', leaderboard.returnLeaderboard());
 			console.log(leaderboard.returnLeaderboard());
