@@ -121,13 +121,13 @@
 
 	{
 		"question": "In football, which team is nicknamed 'Galacticos'?",
-		"answer": " which team is nicknamed 'Galacticos'?",
-		"options": ["Real Madrid","Real Madrid","Juventus","Bayern Munich"]
+		"answer": "Real Madrid",
+		"options": ["Real Madrid","Arsenal","Juventus","Bayern Munich"]
 	},
 
 	{
 		"question": "'We are One', the official song of FIFA world cup 2014 was recorded by?",
-		"answer": " the official song of FIFA world cup 2014 was recorded by?",
+		"answer": "Pitbull",
 		"options": ["Pitbull","Shakira","Pitbull","Akon"]
 	},
 
@@ -146,7 +146,7 @@
 	{
 		"question": "Who was the flag bearer for India in the 2016 Rio Olympics ?",
 		"answer": "Abhinav Bindra",
-		"options": ["Sakshi Malik","PV Sidhu","Sunil Chhetri","Abhinav Bindra"]
+		"options": ["Sakshi Malik","PV Sindhu","Sunil Chhetri","Abhinav Bindra"]
 	},
 
 	{
@@ -266,7 +266,7 @@
 	{
 		"question": "Who was the Silver medallist for India in the Rio Olympics?",
 		"answer": "PV Sindhu",
-		"options": ["Dipa Karmakar","PV SIDHU","Saina Nehwal","Sakshi Malik"]
+		"options": ["Dipa Karmakar","PV Sindhu","Saina Nehwal","Sakshi Malik"]
 	},
 
 	{
@@ -289,13 +289,13 @@
 
 	{
 		"question": "Who won the Cricket WC 1987?",
-		"answer": "Aus",
+		"answer": "AUS",
 		"options": ["WI","IND","AUS","PAK"]
 	},
 
 	{
 		"question": "Who holds the record for the highest wickets taken in an ODI match?",
 		"answer": "Chaminda Vaas",
-		"options": ["Bret Lee","Glen McGrath","Shoaib Akhtar","Chaminda Vaas"]
+		"options": ["Brett Lee","Glenn McGrath","Shoaib Akhtar","Chaminda Vaas"]
 	}
 ]

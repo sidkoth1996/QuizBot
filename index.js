@@ -472,6 +472,9 @@ io.on('connection', function(socket) {
 	socket.on('end timer', function() {
 		console.log("Timer has ended");
 		setState(States.state_end);
+
+		leaderboard.addScore(getName(), getScore());
+		
 		state_end();
 	});
 
@@ -484,8 +487,6 @@ io.on('connection', function(socket) {
 
 var state_start = function() {
 	io.emit('bot message', {'msg': 'Hello, I am QuizBot. What is your name?', 'score': getScore()});
-
-	//io.emit('reset timer', {});
 };
 
 var state_category = function() {

@@ -81,7 +81,7 @@
   {
     "question": "Deepika Padukone endorses which jewellery brand?",
     "answer": "Tanishq",
-    "options": ["Tbz","Joyalukkas","Nakshatra ","Tanishq"]
+    "options": ["Tbz","Joyalukkas","Nakshatra","Tanishq"]
   },
 
   {
@@ -97,7 +97,7 @@
   },
 
   {
-    "question": "Which one the below is not a Justin Beiber song?",
+    "question": "Which of the below is not a Justin Beiber song?",
     "answer": "What Do You Mean",
     "options": ["Gangster","What Do You Mean","One Love","Where Do You Go"]
   },
@@ -169,7 +169,7 @@
   },
 
   {
-    "question": "What is Ranveer Kapoor's real name?",
+    "question": "What is Ranveer Singh's real name?",
     "answer": "Ranveer Bhavnani",
     "options": ["Rajiv Bhatia","Ajay Singh","Ranveer Bhavnani","Ajay Bhavnani"]
   },
