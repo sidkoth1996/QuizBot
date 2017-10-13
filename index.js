@@ -444,6 +444,9 @@ io.on('connection', function(socket) {
 				io.emit('wrong answer', {});
 			}
 
+			//Add user score to the leaderboard 
+			leaderboard.addScore(getName(), getScore());
+
 			setState(States.state_end);
 			state_end();
 
@@ -459,10 +462,8 @@ io.on('connection', function(socket) {
 				state_start();
 			}
 			//Save user name and score to leaderboard
-			leaderboard.addScore(getName(), getScore());
-			console.log(leaderboard.returnLeaderboard());
+
 			io.emit('update leaderboard', leaderboard.returnLeaderboard());
-			console.log(leaderboard.returnLeaderboard());
 		}
 	});
 
